@@ -34,7 +34,7 @@ img {
     padding: 20px;
     margin: 20px;
     background: #0b0c26;
-    border: 4px solid crimson;
+    border: 2px solid crimson;
 }
 
 .row {
@@ -48,7 +48,7 @@ img {
     flex: 35%;
     background-color: #0b0c26;
     
-    border: 4px solid crimson;
+    border: 2px solid crimson;
 }
 
 .main {
@@ -56,14 +56,15 @@ img {
     margin: 10px;
     flex: 65%;
     background-color: #0b0c26;
-    border: 4px solid crimson;
+    border: 2px solid crimson;
     display: flex;
 }
 
 .film {
     padding: 10px;
     margin: 10px;
-    border: 4px solid crimson;
+    background-color: #0b0c26;
+    border: 2px solid crimson;
     display: flex;
     max-height: 250px;
     width: 500px;
@@ -125,6 +126,8 @@ img {
 @media screen and (max-width: 600px){
     
     .film {
+        padding: 10px;
+        margin-bottom: 10px;
         flex-direction: column;
         width: auto;
         height: auto;
@@ -132,6 +135,16 @@ img {
         max-height: auto;
     }  
 
-
+    .header {
+        margin: 5px;
+    }
+    .main, .side, .row {
+        padding: 5px;
+        margin: 0px;
+        margin-bottom: 10px;
+        background: none;
+        border: none;
+    }
 }
+
  
