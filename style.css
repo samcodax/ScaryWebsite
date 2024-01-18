@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
+body {
+    font-family: 'MS gothic';
+    background-image: url("");
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: crimson;
+}
+
+.header {
+    padding: 20px;
+    background: #0b0c26;
+    color: white; 
+}
+
+.row {
+    display: flex;
+    padding: 20px;
+}
+
+.sideleft {
+    flex: 25%;
+    background-color: #0b0c26;
+    padding: 20px;
+    color: white;
+}
+
+.main {
+    flex: 55%;
+    background-color: #0b0c26;
+    padding: 20px;
+}
