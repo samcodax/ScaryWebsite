@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     color: white;
     background-image: url("img/background.gif");
    }
@@ -59,12 +61,6 @@ img {
     border: 4px solid crimson;
     display: flex;
 }
-
-p {
-    text-align: justify;
-    font-size: 1rem;
-}
-
 
 .film {
     padding: 10px;
