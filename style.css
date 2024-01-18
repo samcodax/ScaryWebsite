@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 
@@ -130,7 +128,7 @@ img {
         flex-direction: column;
         width: auto;
         height: auto;
-        min-height: 500px;
+        min-height: 550px;
         max-height: auto;
     }  
 
