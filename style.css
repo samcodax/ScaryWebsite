@@ -60,6 +60,10 @@ img {
     display: flex;
 }
 
+p {
+    text-align: justify;
+}
+
 
 .film {
     padding: 10px;
@@ -79,6 +83,7 @@ img {
     grid-column: span 1;*/
     height: 200px;
     min-width: 120px;
+    max-width: 120px;
     margin: 10px;
     margin-right: 20px;
 }
@@ -102,13 +107,27 @@ img {
 */
 
 @media screen and (max-width: 900px) {
-    .row, .main {
+    .row, .main, .film {
         flex-direction: column;
+    
+    }
+
+    .portada {
+        height: 200px;
+        min-width: 120px;
+        max-width: 500px;
+        display: block;
+        margin: 10px;
+        margin-right: 10px;
     }
     
     .film {
         width: auto;
-        min-height: 270px;
-    }
+        height: auto;
+        min-height: 500px;
+        max-height: auto;
+        
+    }   
+
 
 }
