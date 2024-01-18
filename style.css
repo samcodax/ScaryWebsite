@@ -103,8 +103,10 @@ img {
 */
 
 @media screen and (max-width: 990px) {
-    .row, .main{
+    .row, .main, .side {
         flex-direction: column;
+        background: none;
+        border: none;
     }
 
     .portada {
@@ -127,7 +129,8 @@ img {
     
     .film {
         padding: 10px;
-        margin-bottom: 10px;
+        margin: 0px;
+        margin-bottom: 20px;
         flex-direction: column;
         width: auto;
         height: auto;
@@ -136,10 +139,10 @@ img {
     }  
 
     .header {
-        margin: 5px;
+        margin: 0px;
     }
     .main, .side, .row {
-        padding: 5px;
+        padding: 0px;
         margin: 0px;
         margin-bottom: 10px;
         background: none;
