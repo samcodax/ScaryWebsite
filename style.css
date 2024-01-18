@@ -69,8 +69,6 @@ img {
     min-width: 500px;
     max-height: 250px;
 
-
-
    /* display: grid;
     grid-template-rows: 50px 50px 100px;
     grid-template-columns: 120px minmax(300px, 400px);
@@ -103,7 +101,7 @@ img {
 
 */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .row, .main {
         flex-direction: column;
     }
