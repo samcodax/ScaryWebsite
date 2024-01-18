@@ -106,8 +106,8 @@ p {
 
 */
 
-@media screen and (max-width: 900px) {
-    .row, .main, .film {
+@media screen and (max-width: 990px) {
+    .row, .main{
         flex-direction: column;
     }
 
@@ -119,14 +119,24 @@ p {
         margin: 10px;
         margin-right: 10px;
     }
+
+    .film {
+        width: auto;
+        height: auto;
+        max-height: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
     
     .film {
+        flex-direction: column;
         width: auto;
         height: auto;
         min-height: 500px;
         max-height: auto;
-        
-    }   
+    }  
 
 
 }
+ 
