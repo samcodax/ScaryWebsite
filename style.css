@@ -67,6 +67,7 @@ img {
     border: 4px solid crimson;
     display: flex;
     max-height: 250px;
+    width: 500px;
 
    /* display: grid;
     grid-template-rows: 50px 50px 100px;
@@ -103,6 +104,11 @@ img {
 @media screen and (max-width: 900px) {
     .row, .main {
         flex-direction: column;
+    }
+    
+    .film {
+        width: auto;
+        min-height: 270px;
     }
 
 }
