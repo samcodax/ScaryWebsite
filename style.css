@@ -10,33 +10,97 @@ body {
 
 h1 {
     font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2rem;
     color: crimson;
 }
 
+h2 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: crimson;
+}
+
+h3 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .header {
     padding: 20px;
+    margin: 20px;
     background: #0b0c26;
+    border: 4px solid crimson;
 }
 
 .row {
     display: flex;
-    padding: 20px;
+    padding: 10px;
 }
 
-.sideleft {
+.side {
+    padding: 20px;
+    margin:10px;
     flex: 35%;
     background-color: #0b0c26;
-    padding: 20px;
+    
+    border: 4px solid crimson;
 }
 
 .main {
+    padding: 20px;
+    margin: 10px;
     flex: 65%;
     background-color: #0b0c26;
-    padding: 20px;
+    border: 4px solid crimson;
 }
 
-.marketing {
-    
-    flex: 50%;
-    padding: 20px;
+.divmain {
+    display: flex;
+    margin: 10px;
 }
+
+.film {
+    padding: 20px;
+    margin: 10px;
+    border: 4px solid crimson;
+
+    display: grid;
+    grid-template-rows: 50px 50px 100px;
+    grid-template-columns: 100px 300px;
+
+}
+
+.portada {
+    grid-row-start: 1; 
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.desc {
+    grid-row-start: 3; 
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.titulo {
+    grid-row-start: 1; 
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.director {
+    grid-row-start: 2; 
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
