@@ -4,13 +4,12 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-image: url("img/background.gif");
     color: white;
+    background-image: url("img/background.gif");
    }
 
 h1 {
     font-family: 'Pixelify Sans', sans-serif;
-    font-size: 2rem;
     color: crimson;
 }
 
