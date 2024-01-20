@@ -277,31 +277,29 @@ p {
         flex-direction: column;
     }
 
+    .marketing {
+        justify-content: center;
+        align-items: center;
+    }
+
     .banner {
-        flex: auto;
-        flex-grow: 100;
+        min-height: 230px;
+        max-height: 230px;
+        min-width: 160px;
+        max-width: 160px;
+        border: 4px solid white;
+        margin-left: 10px;
     }
 
     .marketingFilmSection {
         flex-direction: row;
         flex: auto;
-        justify-content: right;
 
     }
-
-
 
     .filmMarketing3 {
         display: none;
     }
-
-    /*.marketingFilmsGrid {
-        grid-template-rows: minmax(auto, 250px) minmax(auto, 250px);
-        grid-template-columns: minmax(100px, auto);
-        grid-auto-rows: 0px;
-        overflow: hidden;
-    }
-    */
 
     .portada {
         height: 200px;
@@ -346,10 +344,6 @@ p {
         height: auto;
     } 
     
-    .banner {
-        min-width: auto;
-    }
-
     .marketing {
         column-gap: 0px;
     }
