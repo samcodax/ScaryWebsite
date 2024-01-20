@@ -345,11 +345,11 @@ p {
     } 
     
     .marketing {
-        column-gap: 0px;
+        column-gap: 10px;
     }
 
-    .filmMarketing1, .filmMarketing2 {
-        width: auto;
+    .filmMarketing1, .banner {
+        margin: 0px;
     }
 
     .filmMarketing2 {
