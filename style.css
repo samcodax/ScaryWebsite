@@ -85,7 +85,13 @@ img {
     text-align: center;
     line-height: 0px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer p {
+    font-size: 0.7rem;
 }
 
 .row {
@@ -219,7 +225,7 @@ p {
 
 @media screen and (max-width: 990px) {
     
-    .row, .main, .side {
+    .row, .main, .side, .footer {
         flex-direction: column;
     }
 
@@ -237,6 +243,7 @@ p {
         height: auto;
         max-height: auto;
     }
+
 }
 
 @media screen and (max-width: 550px){
@@ -251,6 +258,11 @@ p {
         justify-content: space-between;
         align-items: center;
     }
+
+    .footer {
+        line-height: 10px;
+    }
+
 
     .film {
         padding: 10px;
