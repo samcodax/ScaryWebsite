@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
 
 
 body {
@@ -22,7 +23,7 @@ h2 {
     color: crimson;
     font-size: 1.2rem;
     text-shadow: 0px 0px 30px crimson;
-    line-height: 10px;
+    line-height: 0px;
 
 }
 
@@ -35,42 +36,47 @@ h3 {
     font-family: 'Pixelify Sans', sans-serif;
     color: white;
     font-size: 1rem;
-    text-shadow: 0px 0px 10px cyan ;
+    text-shadow: 0px 0px 5px cyan ;
     line-height: 10px;
-}
-
-.desccolor:hover {
-    background-color:  cyan;
-    box-shadow: 0px 0px 10px cyan;
-    color: blue;
-    transition: 0.5s;
 }
 
 p {
     transition: 1.5s;
 }
 
- 
+.cita {
+    color: cyan;
+    font-family: "EB Garamond", serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-style: italic;
+    text-shadow: 0px 0px 20px #0b0c26;
+    
+}
+
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
 .header {
-    padding: 20px;
-    margin: 20px;
+    padding: 5px;
+    padding-left: 10px;
     background: #0b0c26;
-    border: 4px solid crimson;
+    border-bottom: 4px solid crimson;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .footer {
     padding: 5px;
-    margin-top: 20px;
     background: #0b0c26;
     text-align: center;
     line-height: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .row {
@@ -106,11 +112,21 @@ img {
     width: 500px;
 }
 
-.reviews {
+.desccolor:hover {
+    background-color:  cyan;
+    box-shadow: 0px 0px 10px cyan;
+    color: blue;
+    transition: 0.5s;
+}
+
+
+
+/* Reviews-Comentarios */
+.review {
     padding: 10px;
     margin: 10px;
     margin-bottom:20px;
-    border-bottom: 4px solid crimson;
+    border-left: 4px solid crimson;
     display: flex;
     height: auto;
     max-height: 250px;
@@ -118,9 +134,15 @@ img {
 
 .gridreviews {
     display: grid;
-    grid-template-rows: 80px 60px 60px;
-    grid-template-columns: 80px minmax(300px, 400px);
-    grid-gap: 20px;
+    grid-template-rows: 60px auto;
+    grid-template-columns: 80px auto;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+.usuarioreviews {
+    grid-row: 1/1;
+    grid-column: 2/2;  
 }
 
 .comentarioreviews {
@@ -129,29 +151,49 @@ img {
 }
 
 .valoracionreviews {
-    grid-row: 3/3;
+    grid-row: 2/2;
     grid-column: 2/2;
+}
+
+.fotoreviews {
+    grid-row: span 1;
+    grid-column: span 1;
+    place-self: center;
+}
+
+.portadareviews {
+    height: 120px;
+    min-width: 80px;
+    max-width: 80px;
+    grid-row: 2 / 2;
+    grid-column: span 1;
+    border: 2px solid gold;
 }
 
 .checked {
     color: crimson;
     rotate: 180deg;
 }
+
+.halfchecked {
+    rotate: 180deg;
+    background: linear-gradient(to left, crimson 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 .unchecked {
+    color: white;
     rotate: 180deg;
 }
 
-.usuarioreviews {
-    grid-row: 1/1;
-    grid-column: 2/2; 
-}
-
 .fotoperfil {
-    border: 4px solid crimson;
+    border: 2px solid white;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    
 }
 
 
@@ -167,15 +209,6 @@ img {
     max-width: 120px;
     margin: 10px;
     margin-right: 20px;
-}
-
-.portadareviews {
-    height: 120px;
-    min-width: 80px;
-    max-width: 80px;
-    grid-row: 2 / 3;
-    grid-column: span 1;
-    border: 2px solid white;
 }
 
 p {
@@ -201,11 +234,17 @@ p {
 */
 
 @media screen and (max-width: 990px) {
+    
+    .header {
+        margin: 0px;
+    }
+    
     .row, .main, .side {
         flex-direction: column;
         background: none;
         border: none;
     }
+
 
     .portada {
         height: 200px;
@@ -229,18 +268,14 @@ p {
         padding: 10px;
         margin: 0px;
         margin-bottom: 20px;
-        flex-direction: column;
         width: auto;
         height: auto;
-        min-height: 480px;
-        max-height: auto;
     }  
 
     .header {
         margin: 0px;
     }
     .main, .side, .row {
-        padding: 0px;
         margin: 0px;
         margin-bottom: 10px;
         background: none;
