@@ -183,30 +183,9 @@ img {
     box-shadow: 0px 0px 30px black;
 }
 
-.filmMarketing1 {
-    background-image: url("img/Portadas/pearl.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.filmMarketing2 {
-    background-image: url("img/Portadas/housejack.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.filmMarketing3 {
-    background-image: url("img/Portadas/crimesfuture.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-
 .filmMarketing1:hover, .filmMarketing2:hover, .filmMarketing3:hover {
     box-shadow: 0px 0px 30px red;
-    background-size: 110%;
 }
-
 
 .desccolor:hover {
     background-color:  cyan;
