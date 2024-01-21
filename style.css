@@ -320,7 +320,7 @@ p {
         min-width: 160px;
         max-width: 160px;
         margin-left: 10px;
-        background-image: url(../img/Banner/banner2.jpg)
+        background-image: url("img/Banner/banner2.jpg")
     }
 
     .marketingFilmSection {
