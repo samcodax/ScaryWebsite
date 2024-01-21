@@ -89,8 +89,7 @@ img {
 }
 
 .footer {
-    
-    bottom: 0;
+
     padding: 5px;
     background: #0b0c26;
     text-align: center;
@@ -98,7 +97,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .footer p {
@@ -112,6 +110,25 @@ img {
 .side {
     flex: 35%;
     padding: 10px;
+}
+
+.main {
+    display: flex;
+    flex: 65%;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.film {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom:20px;
+    background-color: #0b0c26;
+    border: 4px solid;
+    border-image: linear-gradient(gold, chocolate) 1;
+    box-shadow: 0px 0px 30px red;
+    display: flex;
+    width: 500px;
 }
 
 .socials {
@@ -153,26 +170,7 @@ img {
 .banner:hover {
     filter: brightness(150%);
     box-shadow: 0px 0px 30px red;
-}
-
-
-.main {
-    display: flex;
-    flex: 65%;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-
-.film {
-    padding: 10px;
-    margin: 10px;
-    margin-bottom:20px;
-    background-color: #0b0c26;
-    border: 4px solid;
-    border-image: linear-gradient(gold, chocolate) 1;
-    box-shadow: 0px 0px 30px red;
-    display: flex;
-    width: 500px;
+    transition: 0.1s;
 }
 
 .filmMarketing1, .filmMarketing2, .filmMarketing3 {
@@ -183,10 +181,28 @@ img {
     border: 4px solid;
     border-image: linear-gradient(gold, chocolate) 1;
     box-shadow: 0px 0px 30px black;
+    background-size: cover;
+    background-position: center;
+    transition: 1.5s;
 }
 
 .filmMarketing1:hover, .filmMarketing2:hover, .filmMarketing3:hover {
     box-shadow: 0px 0px 30px red;
+    filter: brightness(150%);
+    background-size: 120%;
+    transition: 0.1s;
+}
+
+.filmMarketing1 {
+    background-image: url("img/Portadas/pearl.jpg");
+}
+
+.filmMarketing2 {
+    background-image: url("img/Portadas/housejack.jpg");
+}
+
+.filmMarketing3 {
+    background-image: url("img/Portadas/crimesfuture.jpg");
 }
 
 .desccolor:hover {
