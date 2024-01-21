@@ -51,8 +51,9 @@ a:hover {
 
 p {
     transition: 1.5s;
-}
+    font-size: 0.8rem;
 
+}
 
 .cita {
     color: cyan;
@@ -61,7 +62,6 @@ p {
     line-height: 1.2rem;
     font-style: italic;
     text-shadow: 0px 0px 20px #0b0c26;
-    
 }
 
 img {
@@ -81,7 +81,6 @@ img {
     align-items: center;
 }
 
-
 .topbar {
     display: flex;
     gap: 10px;
@@ -89,7 +88,6 @@ img {
 }
 
 .footer {
-
     padding: 5px;
     background: #0b0c26;
     text-align: center;
@@ -119,23 +117,45 @@ img {
     padding: 10px;
 }
 
+.fotoperfil {
+    border: 2px solid white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.portada {
+    height: 200px;
+    min-width: 120px;
+    max-width: 120px;
+    margin: 10px;
+    margin-right: 20px;
+}
+
 .film {
     padding: 10px;
     margin: 10px;
-    margin-bottom:20px;
     background-color: #0b0c26;
     border: 4px solid;
     border-image: linear-gradient(gold, chocolate) 1;
     box-shadow: 0px 0px 30px red;
     display: flex;
+    height: auto;
     width: 500px;
+}
+
+.desccolor:hover {
+    background-color:  cyan;
+    box-shadow: 0px 0px 10px cyan;
+    color: blue;
+    transition: 0.5s;
 }
 
 .socials {
     border-top: 4px cyan solid;
     display: flex;
     padding: 10px;
-    column-gap: 50px;
+    column-gap: 30px;
     font-size: 20px;
     justify-content: center;
     text-shadow: 0px 0px 20px black;
@@ -146,14 +166,12 @@ img {
     column-gap: 20px;
 }
 
-.marketingFilmSection {
-    
+.marketing-film-section {
     display: flex;
     flex-direction: column;
     flex: 50%;
     justify-content:space-evenly;
 }
-
 
 .banner {
     display: flex;
@@ -173,7 +191,7 @@ img {
     transition: 0.1s;
 }
 
-.filmMarketing1, .filmMarketing2, .filmMarketing3 {
+.film-marketing {
     height: 230px;
     min-width: 160px;
     max-width: 160px;
@@ -186,35 +204,25 @@ img {
     transition: 1.5s;
 }
 
-.filmMarketing1:hover, .filmMarketing2:hover, .filmMarketing3:hover {
+.film-marketing:hover {
     box-shadow: 0px 0px 30px red;
     filter: brightness(150%);
     background-size: 120%;
     transition: 0.1s;
 }
 
-.filmMarketing1 {
+.film-1 {
     background-image: url("img/Portadas/pearl.jpg");
 }
 
-.filmMarketing2 {
+.film-2 {
     background-image: url("img/Portadas/housejack.jpg");
 }
 
-.filmMarketing3 {
+.film-3 {
     background-image: url("img/Portadas/crimesfuture.jpg");
 }
 
-.desccolor:hover {
-    background-color:  cyan;
-    box-shadow: 0px 0px 10px cyan;
-    color: blue;
-    transition: 0.5s;
-}
-
-
-
-/* Reviews-Comentarios */
 .review {
     padding: 10px;
     margin-bottom:20px;
@@ -223,7 +231,7 @@ img {
     height: auto;
 }
 
-.gridreviews {
+.review-grid {
     display: grid;
     grid-template-rows: 65px auto;
     grid-template-columns: 80px auto;
@@ -231,28 +239,23 @@ img {
     row-gap: 15px;
 }
 
-.usuarioreviews {
+.review-usuario {
     grid-row: 1/1;
     grid-column: 2/2;  
 }
 
-.comentarioreviews {
+.review-comentario {
     grid-row: 2/2;
     grid-column: 2/2;
 }
 
-.valoracionreviews {
-    grid-row: 2/2;
-    grid-column: 2/2;
-}
-
-.fotoreviews {
+.review-foto {
     grid-row: span 1;
     grid-column: span 1;
     place-self: center;
 }
 
-.portadareviews {
+.review-portada {
     height: 120px;
     min-width: 80px;
     max-width: 80px;
@@ -280,26 +283,6 @@ img {
     rotate: 180deg;
 }
 
-.fotoperfil {
-    border: 2px solid white;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-}
-
-.portada {
-    height: 200px;
-    min-width: 120px;
-    max-width: 120px;
-    margin: 10px;
-    margin-right: 20px;
-}
-
-p {
-    font-size: 0.8rem;
-}
-
-
 @media screen and (max-width: 1150px) {
     
     .row, .main, .side, .footer {
@@ -307,7 +290,6 @@ p {
     }
 
     .marketing {
-        justify-content: center;
         align-items: center;
     }
 
@@ -316,96 +298,60 @@ p {
         max-height: 230px;
         min-width: 160px;
         max-width: 160px;
-        margin-left: 10px;
-        background-image: url("img/Banner/banner2.jpg")
+        background-image: url("img/Banner/banner2.jpg");
+        flex: auto;
     }
 
-    .marketingFilmSection {
+    .marketing-film-section {
         flex-direction: row;
         flex: auto;
-        flex-shrink: 0;
+        column-gap: 10px;
     }
 
-    .filmMarketing3 {
+    .film-3 {
         display: none;
     }
 
     .portada {
-        height: 200px;
-        min-width: 120px;
         max-width: 500px;
-        display: block;
-        margin: 10px;
         margin-right: 10px;
     }
 
     .film {
         width: auto;
-        height: auto;
-        max-height: auto;
     }
 
     .socials {
-        font-size: 20px;
         justify-content: left;
-        column-gap: 40px;
     }
 
 }
 
 @media screen and (max-width: 550px){
     
-    .header {
-        padding: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        background: #0b0c26;
-        border-bottom: 4px solid crimson;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .footer {
         line-height: 15px;
     }
 
-
     .film {
-        padding: 10px;
         margin: 0px;
         margin-bottom: 20px;
-        width: auto;
-        height: auto;
     } 
     
     .marketing {
         column-gap: 10px;
     }
 
-    .filmMarketing1, .banner {
+    .film-1, .banner {
         margin: 0px;
     }
 
-    .filmMarketing2 {
-        display: none;
-    }
-
-    .review {
-        padding: 10px;
-        margin: 0px;
-        margin-bottom:20px;
-        border-left: 4px solid crimson;
-        display: flex;
-        height: auto;
-    }
-     
-    .gridreviews {
-        display: grid;
+    .review-grid {
         grid-template-rows: 80px auto;
-        grid-template-columns: 80px auto;
-        column-gap: 20px;
-        row-gap: 15px;
+    }
+
+    .film-2 {
+        display: none;
     }
 
     .row {
