@@ -89,6 +89,8 @@ img {
 }
 
 .footer {
+    
+    bottom: 0;
     padding: 5px;
     background: #0b0c26;
     text-align: center;
