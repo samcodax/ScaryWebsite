@@ -6,7 +6,7 @@
 body {
     font-family: 'JetBrains Mono', monospace;
     color: white;
-    background-image: url("img/background.gif");
+    background-image: url("/img/background.gif");
     margin: 0px;
    }
 
@@ -149,7 +149,7 @@ img {
     width: auto;
     height: auto; 
     border: 4px solid crimson;
-    background-image: url("img/Banner/banner1.jpg");
+    background-image: url("/img/Banner/banner1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -190,19 +190,19 @@ img {
 }
 
 .filmMarketing1 {
-    background-image: url("img/Portadas/Rojas/pearl.jpg");
+    background-image: url("/img/Portadas/Rojas/pearl.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .filmMarketing2 {
-    background-image: url("img/Portadas/Rojas/housejack.jpg");
+    background-image: url("/img/Portadas/Rojas/housejack.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .filmMarketing3 {
-    background-image: url("img/Portadas/Rojas/crimesfuture.jpg");
+    background-image: url("/img/Portadas/Rojas/crimesfuture.jpg");
     background-size: cover;
     background-position: center;
 }
