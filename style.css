@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'JetBrains Mono', monospace;
