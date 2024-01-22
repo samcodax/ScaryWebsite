@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
 
+* {
+    line-height: calc(1em + 0.5rem);
+}
+
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;/
 }
 
 body {
